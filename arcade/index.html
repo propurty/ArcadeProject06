@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pierce's Arcade</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <h1 id="title">Tic Tac Toe</h1>
+    <button id="reset" type="button">Restart</button>
+    <table>
+      <tr>
+        <td class="cell" id="0"></td>
+        <td class="cell" id="1"></td>
+        <td class="cell" id="2"></td>
+      </tr>
+
+      <tr>
+        <td class="cell" id="3"></td>
+        <td class="cell" id="4"></td>
+        <td class="cell" id="5"></td>
+      </tr>
+
+      <tr>
+        <td class="cell" id="6"></td>
+        <td class="cell" id="7"></td>
+        <td class="cell" id="8"></td>
+      </tr>
+    </table>
+
+    <!-- Element that will display the currentPlayer -->
+
+    <h2 id="currentPlayer"></h2>
+
+    <div class="gameMode">
+      <h2>Choose a Gamemode</h2>
+      <div id="gameModeButtons">
+        <li><button id="twoPlayer">Two Players</button></li>
+        <li><button id="singlePlayer">AI Opponent</button></li>
+      </div>
+    </div>
+
+    <div class="startOverlay">
+      <h2>Enter Names of Players</h2>
+
+      <h3>Defaults to X and O</h3>
+
+      <input
+        type="text"
+        placeholder="Enter Player X's Name"
+        id="playerX" /><br />
+      <input
+        type="text"
+        placeholder="Enter Player O's Name"
+        id="playerO" /><br />
+      <input type="submit" id="submitPlayers" />
+    </div>
+
+    <div class="endOverlay">
+      <div class="endText"></div>
+      <div class="endTextInfo">Click anywhere to continue.</div>
+    </div>
+  </body>
+</html>
